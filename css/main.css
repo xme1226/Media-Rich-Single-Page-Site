@@ -55,10 +55,6 @@ img {
     margin-bottom: 1.5em;
 }
 
-img:first-child {
-    margin-top: 5em;
-}
-
 .nav {
     position: fixed;
     height: 2.125em;
@@ -82,11 +78,34 @@ img:first-child {
 }
 
 h3 {
-    padding-left: 1.3em;
-    padding-right: 1.3em;
+    padding-left: 5.3em;
+    padding-right: 5.3em;
     margin-bottom: 3em;
 }
 
 .logo small {
     font-size: 0.563em; 
+}
+
+.headline {
+    padding-top: 3em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.369em;
+}
+
+@media screen and (max-width: 47.9375em) {
+    .headline {
+        font-size: 1.777em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
+    h3 {
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+    }
 }
