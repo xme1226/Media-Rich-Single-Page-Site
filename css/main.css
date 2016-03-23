@@ -108,4 +108,14 @@ h3 {
         padding-left: 1.3em;
         padding-right: 1.3em;
     }
+    
+    .audio {
+        width: 3em;
+    }
+}
+
+.audio {
+    display: inline;
+    position: absolute;
+    right: 0;
 }
