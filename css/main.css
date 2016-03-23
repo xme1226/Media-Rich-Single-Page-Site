@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -16,42 +16,44 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* custom */
 
 img {
-    width: 100%;
-    margin-bottom: 1.5em;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 3em;
 }
 
 .nav {
@@ -77,9 +79,11 @@ img {
 }
 
 h3 {
-    padding-left: 5.3em;
-    padding-right: 5.3em;
-    
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    font-size: 1.333em
 }
 
 .logo small {
@@ -93,24 +97,6 @@ h3 {
     font-size: 2.369em;
 }
 
-@media screen and (max-width: 47.9375em) {
-    .headline {
-        font-size: 1.777em;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-    
-    h3 {
-        padding-left: 1.3em;
-        padding-right: 1.3em;
-    }
-    
-    .audio {
-        width: 3em;
-    }
-
-}
-
 .audio {
     display: inline;
     position: absolute;
@@ -118,6 +104,47 @@ h3 {
 }
 
 section {
-    margin-top: 1.5em;
-    margin-bottom: 3em;
+    margin-top: 5em;
+    margin-bottom: 10em;
+    padding-bottom: 3em;
+    background-color: rgba(211, 211, 211, 0.17);
 }
+
+section:first-of-type {
+    margin-top: 0em;
+}
+
+section:last-of-type {
+    padding-bottom: 0em;
+}
+
+
+
+@media screen and (max-width: 47.9375em) {
+    .headline {
+        font-size: 1.777em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    h3 {
+        font-size: 1em;
+        width: 90%;
+    }
+
+    .audio {
+        width: 3em;
+    }
+
+    section {
+        margin-top: 1.5em;
+        margin-bottom: 3em;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+}
+
